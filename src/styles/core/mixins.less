@@ -1,0 +1,22 @@
+.font-regular(@fontSize) {
+  font: 400 @fontSize @PTSerif;
+}
+
+.font-bold(@fontSize) {
+  font: 700 @fontSize @PTSerif;
+}
+
+.href(@color: @linkColor, @colorHover: @linkColorHover, @colorActive: @linkColorActive, @colorVisited: @linkColorVisited){
+  &:visited{
+    color: @colorVisited;
+  }
+  &:link{
+    color: @color;
+  }
+  &:hover{
+    color: @colorHover;
+  }
+  &:active{
+    color: @colorActive;
+  }
+}

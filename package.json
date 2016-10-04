@@ -1,0 +1,16 @@
+{
+  "name": "Gulp-less-template",
+  "version": "0.0.1",
+  "author": "Nata Entali <entalila@icloud.com>",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-less": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-imagemin": "*",
+    "gulp-cache": "*",
+    "gulp-livereload": "*",
+    "gulp-uglify": "*",
+    "gulp-minify-css": "*",
+    "tiny-lr": "*"
+  }
+}
