@@ -9,6 +9,22 @@
 
 // Here we go
 
+@font-face {
+  font-family: Designosaur;
+  src: url(/src/fonts/Designosaur-Regular.ttf)
+
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(/src/fonts/OpenSans-Bold.ttf)
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(/src/fonts/OpenSans-Light.ttf)
+}
+
 .header-section {
   background-color: #f6f6f6;
   height: 135px;
@@ -20,13 +36,25 @@
   background-size: contain;
 }
 
-.is-designosaur {
+.is-font-OpenSansBold {
+  font-family: OpenSansBold !important;
+}
 
+.is-font-OpenSansLight {
+  font-family: OpenSansLight !important;
+}
+
+.is-font-Designosaur {
+  font-family: Designosaur !important;
 }
 
 .is-blue {
   color: #1c9cd6;
 
+}
+
+.is-height-450 {
+  height: 450px !important;
 }
 
 .is-vertical-center {
@@ -229,12 +257,12 @@ input:checked + .slide-container .nav label {
   position: relative;
   border-radius: 100%;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: white;
 }
 
 .nav-dots .nav-dot:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #1c9cd6;
 }
 
 input#img-1:checked ~ .nav-dots label#img-dot-1,
@@ -243,7 +271,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
-  background: rgba(0, 0, 0, 0.8);
+  background: #1c9cd6;
 }
 
 .is-color-white {
@@ -324,8 +352,8 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background-color: #f2f2f2;
 }
 
-.is-margin-top-minus-200 {
-  margin-top: -400px;
+.is-margin-top-minus-350 {
+  margin-top: -350px;
 }
 
 .is-height-400 {
@@ -378,11 +406,30 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 .timeline-section {
   background-color: #f2f2f2;
+  padding-bottom: 30px;
 }
 
-.timeline {
-  width: 118px;
-  height: 1108px;
+.timeline{
+  position: relative!important;
+  width: 50px!important;
+  height: 1090px!important;
+  background-image: url("/src/img/B4_timeline.png");
+}
+.is-one{
+  top: 50px;
+}
+.is-two{
+  top: 500px;
+}
+.is-three{
+  top: 600px;
+}
+.is-four {
+  top: 700px;
+}
+
+.is-round{
+
 }
 
 .is-padding-bottom-30 {
@@ -393,12 +440,18 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   margin-bottom: 15px;
 }
 
+.is-margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
 .is-min-width-330 {
   min-width: 330px;
 }
 
 .well {
   margin-bottom: 10px !important;
+  background-color: white !important;
+  border-color: white !important;
 }
 
 .is-height-20 {
@@ -448,4 +501,67 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 .is-margin-top-100 {
   margin-top: 150px;
+}
+
+.is-padding-10-10 {
+  padding: 10px 10px 10px 10px;
+}
+
+.is-shadow {
+  box-shadow: 0 0 20px black !important;
+}
+
+textarea {
+  resize: none;
+}
+
+.is-button-shadow {
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.is-left-border-black {
+  border-left: 1px solid gainsboro !important;
+}
+
+.is-color-light-grey {
+  color: #a1a1a1 !important;
+}
+
+.is-hover-dark:hover {
+  background-color: #00254b !important;
+  transition: 1s;
+}
+
+.is-border-radius-5 {
+  border-radius: 5px;
+}
+
+.is-border-black-1 {
+  border: 1px solid grey!important;
+}
+
+.is-rounded-button {
+  width: 100px!important;
+  height: 100px;
+  border-radius: 50%;
+}
+.tooltip{
+    display: inline;
+    position: relative;
+}
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+.is-absolute{
+  position: absolute;
 }
