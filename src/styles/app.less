@@ -9,17 +9,14 @@
 
 // Here we go
 
+body{
+  font-family: 'Open Sans', sans-serif!important;
+}
 @font-face {
   font-family: Designosaur;
   src: url(../fonts/designosaur.ttf)
 
 }
-
-@font-face {
-  font-family: OpenSansBold;
-  src: url(../fonts/OpenSans-Bold.ttf)
-}
-
 
 
 .header-section {
@@ -34,17 +31,9 @@
 }
 
 .is-font-OpenSansBold {
-  font-family:'Open Sans', sans-serif!important;
-  font-weight: 900;
+  font-family: 'Open Sans', sans-serif!important;
 }
 
-.is-font-OpenSansLight {
-  font-family: OpenSansLight !important;
-}
-
-.is-font-Designosaur {
-  font-family: Designosaur !important;
-}
 
 .is-blue {
   color: #1c9cd6;
@@ -91,7 +80,11 @@
 }
 
 .is-bold {
-  font-weight: bold;
+  font-weight: bold!important;
+}
+
+.is-italic{
+  font-weight: 400!important;
 }
 
 .menu-section {
@@ -271,7 +264,9 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: #1c9cd6;
 }
-
+.is-padding-20-20{
+  padding: 20px 30px 20px 30px!important;
+}
 .is-color-white {
   color: white !important;
 }
@@ -344,9 +339,15 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   min-height: 420px;
   height: 420px;
 }
+.is-margin-left-20{
+  margin-left: 20px!important;
+}
 
 .is-full-width {
   width: 100%;
+}
+.is-full-height {
+  height: 100%;
 }
 
 .is-bg-light-grey {
