@@ -205,7 +205,7 @@
 	        <textarea placeholder="Коротко опишите для каких потребностей вам нужна виза" class="is-full-width is-border-radius-5 is-border-black-1 is-no-outline is-padding-left-10" rows="13"></textarea>
 					<br />
 					<input type="text" class="is-padding-left-10 is-color-grey is-width-50 is-height-40 is-margin-top-10 is-border-radius-5 is-border-black-1" placeholder="Введите Ваш номер телефона">
-					<button class="btn-blue is-blue-1 is-width-50 is-margin-left-10 is-margin-top-10 is-hover-dark ">Подобрать тип визы <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+					<button class="btn-blue is-blue-1 is-blue-1 is-width-50 is-margin-left-10 is-margin-top-10 is-hover-dark ">Подобрать тип визы <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</div>
@@ -236,7 +236,7 @@
 			</div>
 			<div class="col-xs-5 ">
 				<img src="src/img/B3_ico.png" class="is-margin-bottom-10">
-				<span class="is-color-white h4 is-margin-left-20 is-font-OpenSansLight">Бесплатное оформление виз для детей до 18 лет <i title="Дополнительная информация для клиента" class="fa fa-info-circle is-blue" aria-hidden="true"></i><a title="This is some information for our tooltip." class="tooltip">CSS3 Tooltip</a></span>
+				<span class="is-color-white h4 is-margin-left-20 is-font-OpenSansLight">Бесплатное оформление виз для детей до 18 лет <i data-toggle="tooltip" data-placement="top" title="Дополнительная информация для клиента" class="fa fa-info-circle is-blue" aria-hidden="true"></i><a title="This is some information for our tooltip." class="tooltip">CSS3 Tooltip</a></span>
 			</div>
 		</div>
 		<div class="row is-padding-bottom-15">
@@ -485,10 +485,11 @@
 	</div>
 
 </section>
-
 <script>
 
-
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 </script>
 </body>
 </html>
